@@ -1,0 +1,85 @@
+body {
+	background: #fffbd5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #b20a2c, #fffbd5);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #b20a2c, #fffbd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+	background: #ff9966;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal;
+	font-family: "Allan";
+	letter-spacing: 3px;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	background-color: white;
+	height: 40px;
+	line-height: 40px;
+	font-family: "Allerta Stencil";
+}
+/*Provides alternating background colors for LIs.*/
+li:nth-child(2n){
+	background-color: #f7f7f7;
+	color: #f78f8f;
+}
+
+input {
+	font-size: 18px;
+	background-color: #f7f7f7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+	color: #d1343e; 
+}
+
+input:focus{
+	background-color: white;
+	border: 3px solid #d1343e;
+	outline: none;
+}
+
+span {
+	background-color: #ef434e;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.4s linear;
+	opacity: 0;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
+}
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
+
+.fa-calendar-plus-o{
+	float: right;
+	cursor: pointer;
+}
+
+#container {
+	box-shadow: 0 0 3px rgba(0,0,0,0.3);
+	width: 360px;
+	margin: 100px auto;
+	background-color: #f7f7f7;
+}
